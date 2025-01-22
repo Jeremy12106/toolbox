@@ -2,7 +2,6 @@ import os
 import re
 from pytubefix import YouTube
 from pytubefix.exceptions import PytubeFixError
-from pytubefix.cli import on_progress
 
 def main():
     url = input("Please enter a YouTube URL: ")
@@ -14,7 +13,7 @@ def yt_mp3_download(url, format='mp3'):
     os.makedirs(output_folder, exist_ok=True)
     
     try:
-        yt = YouTube(url, on_progress_callback=on_progress)
+        yt = YouTube(url, client='WEB')
         print('Video Title: ', yt.title)
         
         better_title = re.sub(r'[<>:"/\\|?*]', '', yt.title)
