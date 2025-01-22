@@ -49,3 +49,12 @@ This tool downloads the audio of a YouTube video as a file. It allows you to spe
 
 - Input: A Youtube URL
 - Output: The audio file will be saved in the specified folder, such as `MP3` or `M4A`.
+
+
+### Line Stickers Scraping
+
+A simple Python script to scrape and download stickers from a LINE Stickers Shop URL. 
+This script extracts sticker images from the specified URL and saves them in a well-organized folder structure.
+
+- Input: A LINE Stickers Shop URL
+- Output: Sticker files (PNG format) saved in the `line_stickers/<pack_name>` folder.
