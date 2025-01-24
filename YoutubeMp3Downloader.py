@@ -13,7 +13,7 @@ def yt_mp3_download(url, format='mp3'):
     os.makedirs(output_folder, exist_ok=True)
     
     try:
-        yt = YouTube(url, client='WEB')
+        yt = YouTube(url)
         print('Video Title: ', yt.title)
         
         better_title = re.sub(r'[<>:"/\\|?*]', '', yt.title)
